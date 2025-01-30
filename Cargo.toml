@@ -2,7 +2,7 @@
 name = "run-in-roblox"
 description = "Run stuff inside Roblox Studio"
 version = "0.3.0"
-authors = ["Lucien Greathouse <me@lpghatguy.com>"]
+authors = ["Lucien Greathouse <me@lpghatguy.com>", "Ernest Villacorta <villaernest.developer@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/rojo-rbx/run-in-roblox"
 license = "MIT"
