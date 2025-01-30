@@ -1,4 +1,5 @@
 use std::{
+    net::{SocketAddrV4, Ipv4Addr},
     sync::{mpsc, Arc},
     thread,
     time::Duration,
@@ -98,7 +99,7 @@ impl MessageReceiver {
                 })
             };
 
-            let addr = ([127, 0, 0, 1], options.port).into();
+            let addr = SocketAddrV4::new(Ipv4Addr::UNSPECIFIED, options.port).into();
             let server = Server::bind(&addr)
                 .serve(service)
                 .with_graceful_shutdown(shutdown_rx)
